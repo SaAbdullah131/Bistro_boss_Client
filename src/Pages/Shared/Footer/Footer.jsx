@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Footer = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+
     return (
         <form>
             <div class="footer p-10 bg-neutral text-neutral-content">
@@ -19,7 +22,7 @@ const Footer = () => {
             </div>
             <div class="footer-center p-4 bg-neutral text-base-content">
                     <div>
-                        <p className='text-white'>Copyright © 2023 - All right reserved by Bistro Boss</p>
+                        <p className='text-white'>Copyright © {year} - All right reserved by Bistro Boss</p>
                     </div>
                 </div>
         </form>
