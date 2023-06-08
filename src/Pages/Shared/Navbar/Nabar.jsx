@@ -1,16 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nabar = () => {
     const navOptions = <>
-        <li><a>Item 1</a></li>
-        <li tabIndex={0}>
-            <a className='justify-between'>Parent</a>
-            {/* <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-            </ul> */}
-        </li>
-        <li><a>Item 3</a></li>
+        <li><Link to='/'>Home</Link> </li>
+        <li><Link to='/menu'>Our Menu</Link></li>
+        <li><Link>Items 3</Link></li>
     </>
     return (
         <>
@@ -24,7 +19,7 @@ const Nabar = () => {
                             {navOptions}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Bistro Boss</a>
+                    <a className="btn btn-ghost normal-case text-xl"><Link to='/'>Bistro Boss</Link></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
