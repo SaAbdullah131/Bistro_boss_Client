@@ -1,12 +1,18 @@
 import React from 'react';
 import { Helmet } from "react-helmet-async";
+import Cover from '../Shared/Cover/Cover';
+import menuImg from "../../assets/menu/pizza-bg.jpg";
+
+
 const Menu = () => {
+    
     return (
         <div>
             <Helmet>
                 <title>Bistro | Menu</title>
             </Helmet>
-            <h2>Men Men Menu</h2>
+            <Cover img={menuImg} title="Our Menu"></Cover>
+            
         </div>
     );
 };
