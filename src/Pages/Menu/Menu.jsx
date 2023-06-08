@@ -1,9 +1,12 @@
 import React from 'react';
-
+import { Helmet } from "react-helmet-async";
 const Menu = () => {
     return (
         <div>
-            <h1>Men Men Menu</h1>
+            <Helmet>
+                <title>Bistro | Menu</title>
+            </Helmet>
+            <h2>Men Men Menu</h2>
         </div>
     );
 };
